@@ -1,0 +1,31 @@
+lib: 
+core:
+* config:
+   * main_app.dart:
+      * Buat MaterialApp sebagai entry point aplikasi dengan tema utama menggunakan warna biru, yang sesuai dengan tampilan aplikasi xefag.
+      * Atur initialRoute ke halaman HomeScreen, dan buat rute navigasi ke halaman ProductScreen
+* utils:
+   * route_utils.dart:
+      * Buat utilitas untuk mempermudah navigasi antar layar. Misalnya, gunakan Navigator.pushNamed() saat berpindah dari HomeScreen ke ProductScreen.
+* constants:
+   * string_constants.dart:
+      * Simpan string teks yang sering digunakan di aplikasi, seperti icon, nama  tombol, atau teks lainnya. 
+   * image_constants.dart:
+      * Simpan path dari gambar-gambar yang digunakan dalam aplikasi, seperti ikon atau gambar latar belakang.
+   * color_constants.dart:
+      * Definisikan warna yang sering digunakan, seperti:
+         * Biru (#D81B60) dan merah (#5387AB) untuk warna utama background aplikasi.
+features:
+* screen:
+   * home_screen.dart
+      * Buat Scaffold dengan background biru; nama aplikasi dan logo di bagian atas kiri (font Bodoni Bold size 10); deskripsi aplikasi dibawahnya (font Poppins size 16); image product di center (bisa diatur kemiringan)
+      * Buat widget untuk menampilkan profile
+      * Buat widget untuk penambahan item pada keranjang produk
+      * Buat widget untuk menampilkan contacts
+      * Buat widget untuk menampilkan products dan navigasi ke halaman ProductScreen
+   * product_screen.dart
+      * Buat Scaffold yang menampilkan nama produk dalam bentuk kartu. Pastikan setiap kartu nama produk, kandungan produk, harga produk, button Buy Now, penjumlahan dan pengurangan produk dengan jumlah item di tengahnya
+      * Buat widget untuk menampilkan Relax
+      * Buat widget untuk menampilkan Sleep
+      * Buat widget untuk menampilkan waktu (30, 60, 90) urut ke bawah
+main.dart
